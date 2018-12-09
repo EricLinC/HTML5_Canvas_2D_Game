@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Canvas Game</title>
+		<style>
+			canvas {border: 1px solid #bbbbbb}
+		</style>
+		<script src="MapConfigure.js"></script>
+		<script src="testMap_1.js"></script>
+		<script src="GameState.js"></script>
+		<script src="KeyManager.js"></script>
+		<script src="GameStateManager.js"></script>
+		<script src="TileMap.js"></script>
+		<script src="Entity.js"></script>
+		<script src="GameCamera.js"></script>
+		<script src="MyGame.js"></script>
+		<script>
+			window.onload = function() {
+				var myGame = new MyGame("myCanvas", 40);
+				myGame.resetCanvasSize(800, 600);
+				myGame.start();
+			}
+		</script>
+	</head>
+	
+	<body>
+		<canvas id="myCanvas" width="800" height="600">Sorry! Your brower is not support HTML5!</canvas>
+	</body>
+</html>
